@@ -1,0 +1,207 @@
+body {
+    padding: 0;
+    margin: 0;
+  }
+
+.container {
+    height: 96vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    background-color: rgb(240, 242, 245);
+}
+
+.content {
+    width: 396px;
+    height: 350px;
+}
+
+.forma {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
+    padding: 10px 0px 24px 0px;
+}
+
+.right_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -25px;
+
+}
+
+.left_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: -175px;
+    margin-right: -400px;
+
+}
+
+.logo_img {
+    height: 106px;
+}
+.div_img {
+    margin-left: -235px;
+    margin-bottom: -15px;
+}
+
+.text_cont {
+    font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+    font-size: 28px;
+    font-weight: normal;
+    line-height: 32px;
+    width: 500px
+}
+
+.email_in {
+    margin-top: 13px;
+    border: 1px solid #dddfe2;
+    border-radius: 6px;
+    font-size: 17px;
+    padding: 14px 16px;
+    width: 330px;
+    font-family: Helvetica, Arial, sans-serif;
+    opacity: 0.8;
+}
+
+.password_in {
+    border: 1px solid #dddfe2;
+    border-radius: 6px;
+    font-size: 17px;
+    padding: 14px 16px;
+    width: 330px;
+    font-family: Helvetica, Arial, sans-serif;
+    opacity: 0.8;
+}
+
+.btn_1 {
+    background-color: #1877f2;
+    border: none;
+    border-radius: 6px;
+    font-size: 20px;
+    line-height: 48px;
+    padding: 0 16px;
+    width: 364px;
+    color: white;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: 700;
+}
+
+.btn_2 {
+    border: none;
+    background-color:#42b72a;
+    border-radius: 6px;
+    font-size: 17px;
+    line-height: 48px;
+    font-weight: 500;
+    padding: 0 16px;
+    color: white;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+#link {
+    color: #1877f2;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.line {
+    border-bottom: 1px solid #dadde1;
+    margin: 20px 16px 10px 16px;
+    width: 364px;
+}
+
+.reg_pages {
+    margin-top: 28px;
+    /* color: #1c1e21; */
+    font-family: SFProText-Regular, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    padding-top: 0;
+}
+
+.link_reg {
+    font-family: SFProText-Semibold, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    color: black;
+}
+
+
+.pageFooter {
+    display: flex;
+    flex-direction: column;
+    width: 980px;
+    justify-content: center;
+    padding-top: 20px;
+    margin: 0px 84px 0px 84px;
+    margin: 0 auto;
+
+}
+
+.list_ln {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-left: -40px;
+    list-style-type: none;
+    gap: 10px;
+    color: #8a8d91;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, '.SFNSText-Regular', sans-serif;
+    font-size: 12px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    padding-top: 14px;
+}
+
+.contentCurve {
+    border-bottom: 1px solid #dddfe2;
+    font-size: 1px;
+    height: 8px;
+    margin-bottom: 8px;
+    width: auto;
+}
+
+.list_ln_links {
+    display: flex;
+    flex-wrap: wrap;
+    /* line-height: 1.6; */
+    margin-left: -40px;
+    /* align-items: center; */
+    list-style-type: none;
+    gap: 15px;
+    color: #8a8d91;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, '.SFNSText-Regular', sans-serif;
+    font-size: 12px;
+    /* text-align: center; */
+    margin: 0;
+    padding: 0;
+    line-height: 0.4em;
+
+}
+
+.end_text {
+    display: flex;
+    color: #8a8d91;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, '.SFNSText-Regular', sans-serif;
+    font-size: 11px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 0px;
+}
