@@ -138,9 +138,8 @@ footer{
 }
 
 .links { 
-    background-color: var(--grey); 
-    color: var(--lightblack); 
     font-size: 12px; 
+	background-color: rgb(242, 242, 242); 
     padding: 35px 0; 
   } 
    
@@ -153,17 +152,25 @@ footer{
     grid-gap: 10px; 
     align-items: flex-start; 
     justify-content: center; 
+	
   } 
    
   .links li { 
     line-height: 2.8; 
-    font-size: 8px; 
+    font-size: 11px; 
+	color: #797b7e;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, '.SFNSText-Regular', sans-serif;
   } 
+
+  .links li a {
+	color: #8a8d91;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, '.SFNSText-Regular', sans-serif;
+  }
    
   /*  footer (copyRight)  */ 
    
   .footer { 
-    background-color: var(--grey); 
+    background-color: rgb(242, 242, 242); 
     color: var(--lightblack); 
     font-size: 12px; 
     padding: 20px 0; 
@@ -176,7 +183,9 @@ footer{
     display: flex; 
     align-items: center; 
     justify-content: space-between; 
+	font-size: 10px;
   } 
+
    
   .footer div { 
     margin-bottom: 20px; 
@@ -196,4 +205,5 @@ footer{
   .footer li { 
     margin-right: 30px; 
     margin-bottom: 20px; 
+	
   }
