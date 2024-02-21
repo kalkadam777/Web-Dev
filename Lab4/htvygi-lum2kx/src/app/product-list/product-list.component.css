@@ -1,0 +1,39 @@
+.img_phone {
+    height: 300px;
+    width: 235px;
+}
+
+.rating {
+    font-weight: bold;
+}
+
+.image-gallery {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 10px;
+    gap: 20px;
+  }
+  
+  .image-gallery img {
+    width: 150px;
+     height: 170px;
+    margin-right: 5px; 
+  } 
+/* 
+  .ngx-gallery {
+    display: block;
+    margin-top: 10px;
+  }
+  
+  .ngx-gallery-preview {
+    width: 100%;
+    height: 400px;
+  }
+  
+  .ngx-gallery-thumbnail {
+    width: 100%;
+    height: auto;
+    margin-right: 10px;
+    border: 2px solid #ccc;
+    cursor: pointer;
+  } */
