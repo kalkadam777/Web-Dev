@@ -1,0 +1,13 @@
+<div class="title_main">Интернет-магазин на Kaspi.kz</div>
+
+<div class="menu">
+    <div *ngFor="let category of categories" [routerLink]="['/categories', category.id]">
+      <div class="smartphone">
+        <div class="item_title"> 
+          {{category.name}}
+        </div>
+        <div class="icon_image"><img class="img_smartp" src={{category.images}} alt=""></div>
+      </div>
+    </div>
+</div>
+

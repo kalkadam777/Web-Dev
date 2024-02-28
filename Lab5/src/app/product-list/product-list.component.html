@@ -1,0 +1,31 @@
+<div class = "product-wrapper"*ngIf="category">
+
+  <div class = "product-item" *ngFor="let product of category.products">
+    <img src="{{product.image}}">
+    <button class = "remove" (click)="removeProduct(product.id)">Remove</button>
+    <h3>
+      <a
+        [title]="product.name + ' details'"
+        [routerLink]="['/products', product.id]">
+        {{ product.name }}
+      </a>
+    </h3>
+    <p *ngIf="product.description">
+      Description:{{ product.description.replace('\n','\n')}}
+    </p>
+    <div class="buttons-container">
+      <button type="button" (click)="shareOnTelegram('Shyngys',product.address)">
+        Share
+      </button>
+      <app-product-alerts
+        [product]="product"
+        (notify)="onNotify()">
+      </app-product-alerts>
+      <button class = "kaspi" type="button" style="background-color:red"><a href="{{product.address}}" style="color: rgb(255,255,255);">Kaspi</a></button><br>
+      <button class = "like" type="button" (click)="addLike(product)">
+        Likes: {{product.like}}
+      </button>
+    </div>
+    <img class = "zvezda" src="{{product.rating}}">
+  </div>
+</div>

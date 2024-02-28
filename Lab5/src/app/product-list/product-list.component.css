@@ -1,0 +1,53 @@
+/*@import '~bootstrap/dist/css/bootstrap.min.css';*/
+img{
+  width: 220px;
+  height: auto;
+}
+p{
+  margin-right: 60%;
+}
+.product-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.product-item {
+  width: 48%;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  overflow: hidden;
+}
+.zvezda{
+  /*overflow: hidden;*/
+  width: 100px;
+  height: 40px;
+  position: relative;
+  left: 440px;
+  top: 10px;
+}
+.kaspi{
+  /*position: relative;*/
+  /*top: -10px;*/
+}
+/*.buttons-container{*/
+/*  display: flex;*/
+/*  justify-content: space-between;*/
+/*}*/
+.remove{
+  position: relative;
+  left: 250px;
+  margin-top: auto;
+  border-radius: 8px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.16);
+}
+.like{
+  position: relative;
+  top: 15px;
+}
+
+button {
+  border-radius: 8px;
+}
