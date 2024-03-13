@@ -1,0 +1,24 @@
+
+<section class="album-section">
+  <h2 class="album-heading">Album List</h2>
+  <fieldset class="album-fieldset">
+    <input type="text" [(ngModel)]="newAlbum.title" placeholder="New album title" class="album-input">
+    <button (click)="addAlbum()" type="button" class="btn btn-outline-primary">Add Album</button>
+  </fieldset>
+</section>
+
+
+<ul *ngIf="loaded; else loading">
+  <li *ngFor="let album of albums" class="album-item">
+    <a [routerLink]="['/albums', album.id]" class="album-title">{{album.id}}) {{album.title}}</a>
+    <button (click)="deleteAlbum(album.id)" type="button" class="btn btn-outline-danger">delete</button>
+  </li>
+</ul>
+
+<ng-template #loading>
+<!--  <p>Albums are loading...</p>-->
+  <div class="d-flex align-items-center justify-content-center gap-5">
+    <strong role="status">Albums are loading...</strong>
+    <div class="spinner-border " aria-hidden="true"></div>
+  </div>
+</ng-template>

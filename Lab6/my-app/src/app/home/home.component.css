@@ -1,0 +1,61 @@
+
+.InputField {
+  display: flex;
+  flex-direction: column;
+  padding: 100px 80px 100px 80px;
+  background-color: rgb(241, 241, 241);
+  gap: 32px;
+  height: 70vh;
+}
+
+.textField_content {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  gap: 32px;
+}
+.main2_text {
+  font-family: Kanit;
+  font-size: 54px;
+  font-weight: 700;
+}
+.description2_text {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 500;
+  width: 495px;
+}
+
+.search_icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 10px;
+}
+
+.search_field {
+  border-radius: 12px;
+  border: 1px solid #e1dee7;
+  background-color: white;
+  display: flex;
+  padding: 13px 75px 13px 43px;
+  align-items: flex-start;
+  gap: 12px;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 500;
+  width: 495px;
+  /*height: 22px;*/
+  /* opacity: 0.5; */
+}
+
+.btn_2 {
+  background-color: #712fff;
+  color: white;
+  border: 0;
+  border-radius: 100px;
+  padding: 16px 24px 16px 24px;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: Inter;
+}

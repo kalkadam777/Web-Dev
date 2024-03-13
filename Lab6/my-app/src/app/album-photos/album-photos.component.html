@@ -1,0 +1,12 @@
+<div *ngIf="photos">
+  <h2>Album photos</h2>
+  <button (click)="goBack()">Go Back</button>
+  <div *ngFor="let photo of photos">
+    <ul>
+      <li>{{photo.title}}</li>
+      <img [src]="photo.url" [alt]="photo.title">
+    </ul>
+
+  </div>
+
+</div>

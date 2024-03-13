@@ -1,0 +1,18 @@
+<div *ngIf="loaded">
+  <h3> Albums Detail #{{album.id}}</h3>
+
+  <h4>{{album.title}}</h4>
+
+  <form>
+    <label for="title">Название альбома:</label>
+    <input type="text" id="title" [(ngModel)]="album.title" name="title">
+  </form>
+
+  <button (click)="save()">Сохранить</button>
+
+  <a [routerLink]="['/albums', album.id, 'photos']">Photos</a>
+
+  <button (click)="goBack()">Back</button>
+</div>
+
+<p *ngIf="!loaded"> Album detail page is loading...</p>

@@ -1,0 +1,52 @@
+.container_2 {
+  display: flex;
+  padding: 64px 80px 64px 80px;
+  justify-content: space-between;
+  gap: 128px;
+  background-color: rgb(241, 241, 241);
+  height: 70vh;
+}
+
+.right_side {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 32px;
+}
+
+.left_image {
+  border-radius: 50px;
+}
+
+.main_text2 {
+  font-family: Kanit;
+  font-size: 54px;
+  font-weight: 600;
+}
+
+.description_text2 {
+  width: 495px;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.btn_3 {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 500;
+  background-color: #712fff;
+  border-radius: 100px;
+  border: 0;
+  padding: 16px 24px 16px 16px;
+  color: white;
+  width: fit-content;
+}
+
+.icon {
+  width: 18px;
+  height: 18px;
+  vertical-align: -4px;
+  margin-right: 6px;
+}

@@ -24,5 +24,9 @@ export class ProductDetailsComponent implements OnInit{
     this.cartService.addToCart(product);
     window.alert('Your product has been added to the cart!');
   }
+  addLike() {
+    if (!this.product) return;
+    this.product.like +=1
+  }
 }
 
