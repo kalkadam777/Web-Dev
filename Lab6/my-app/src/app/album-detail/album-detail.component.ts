@@ -32,6 +32,7 @@ export class AlbumDetailComponent implements OnInit{
   save(): void {
     this.albumService.updateAlbum(this.album.id, this.album).subscribe(() => {
       console.log('worked')
+
       this.goBack();
     });
   }

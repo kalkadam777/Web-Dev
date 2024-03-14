@@ -32,6 +32,8 @@ export class AlbumsComponent implements OnInit{
   addAlbum() {
     this.albumsService.createAlbum(this.newAlbum).subscribe((album)=>{
       // console.log(album)
+      // let maxId = this.albums.reduce((acc, cur) => Math.max(acc, cur.id), 0);
+      // album.id = maxId + 1;
       this.albums.push(album);
       this.newAlbum = {} as Album;
     })

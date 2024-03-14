@@ -1,12 +1,10 @@
-<div *ngIf="photos">
-  <h2>Album photos</h2>
-  <button (click)="goBack()">Go Back</button>
-  <div *ngFor="let photo of photos">
-    <ul>
-      <li>{{photo.title}}</li>
-      <img [src]="photo.url" [alt]="photo.title">
-    </ul>
-
+<div *ngIf="photos" class="photos-gallery">
+  <h2>Album Photos</h2>
+  <div class="photos-container">
+    <div *ngFor="let photo of photos" class="photo-item">
+      <img [src]="photo.url" [alt]="photo.title" class="photo-image">
+      <p class="photo-title">{{photo.title}}</p>
+    </div>
   </div>
-
+  <button (click)="goBack()" class="go-back-btn">Go Back</button>
 </div>

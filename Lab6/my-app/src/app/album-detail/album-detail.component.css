@@ -1,0 +1,78 @@
+.album-details {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background: linear-gradient(145deg, #f0f0f0, #ffffff);
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.1);
+  border-radius: 10px;
+}
+
+.album-details h3, .album-details h4 {
+  color: #333;
+  text-align: center;
+}
+
+.album-form {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0;
+}
+
+.album-form label {
+  margin-bottom: 5px;
+  color: #666;
+}
+
+.album-form input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.save-btn, .back-btn {
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  border-radius: 5px;
+  margin-right: 20px;
+}
+
+.save-btn {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.save-btn:hover {
+  background-color: #45a049;
+}
+
+.back-btn {
+  background-color: #f44336;
+  color: white;
+  margin-left: 20px;
+}
+
+.back-btn:hover {
+  background-color: #d32f2f;
+}
+
+.photos-link {
+  display: inline-block;
+  background-color: #2196F3;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.photos-link:hover {
+  background-color: #1e88e5;
+}
+
+.loading-text {
+  text-align: center;
+  font-size: 16px;
+}

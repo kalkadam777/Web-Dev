@@ -1,18 +1,21 @@
-<div *ngIf="loaded">
+<div *ngIf="loaded" class="album-details">
   <h3> Albums Detail #{{album.id}}</h3>
 
   <h4>{{album.title}}</h4>
 
-  <form>
-    <label for="title">Название альбома:</label>
+  <form class="album-form">
+    <label for="title">Album title:</label>
     <input type="text" id="title" [(ngModel)]="album.title" name="title">
   </form>
 
-  <button (click)="save()">Сохранить</button>
+  <button (click)="save()" class="save-btn">Save</button>
 
-  <a [routerLink]="['/albums', album.id, 'photos']">Photos</a>
+  <a [routerLink]="['/albums', album.id, 'photos']" class="photos-link">Photos</a>
 
-  <button (click)="goBack()">Back</button>
+  <button (click)="goBack()" class="back-btn">Back</button>
 </div>
 
-<p *ngIf="!loaded"> Album detail page is loading...</p>
+<div *ngIf="!loaded" class="d-flex justify-content-center align-items-center gap-5 mt-5">
+  <strong role="status">Album detail page is loading...</strong>
+  <div class="spinner-border" aria-hidden="true"></div>
+</div>
