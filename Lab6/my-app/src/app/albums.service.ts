@@ -21,11 +21,11 @@ export class AlbumsService {
   getAlbum(id: number):Observable<Album>{
     return this.client.get<Album>(`${this.BASE_URL}/albums/${id}`);
   }
-  updateAlbum(id: number, album: Album): Observable<any> {
+  updateAlbum(id: number, album: Album): Observable<Album> {
     return this.client.put<Album>(`${this.BASE_URL}/albums/${id}`, album);
   }
 
-  createAlbum(newAlbum: Album) : Observable<Album> {
+  createAlbum(newAlbum: Album): Observable<Album> {
     return this.client.post<Album>(`${this.BASE_URL}/albums`, newAlbum)
   }
 
