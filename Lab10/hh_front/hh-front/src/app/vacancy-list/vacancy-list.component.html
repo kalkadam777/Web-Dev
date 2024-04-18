@@ -1,0 +1,6 @@
+<div *ngFor="let vacancy of vacancies" class="vacancy-item">
+    <h3>{{ vacancy.name }}</h3>
+    <p>{{ vacancy.description }}</p>
+    <div class="salary-info">Salary: {{ vacancy.salary | currency:'USD':'symbol-narrow' }}</div>
+    <!-- <div class="company-info">Company: {{ vacancy.company }}</div> -->
+</div>

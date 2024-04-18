@@ -1,0 +1,7 @@
+<div class="company-list">
+    <div *ngFor="let company of companies" class="company-item">
+      <h2 (click)="navigateToVacancies(company.id)">{{ company.name }}</h2>
+      <p>{{ company.description }}</p>
+      <div class="location-info">{{ company.city }}, {{ company.address }}</div>
+    </div>
+  </div>

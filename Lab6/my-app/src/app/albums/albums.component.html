@@ -10,7 +10,7 @@
 
 <ul *ngIf="loaded; else loading">
   <li *ngFor="let album of albums" class="album-item">
-    <a [routerLink]="['/albums', album.id]" class="album-title">{{album.id}}) {{album.title}}</a>
+    <a [routerLink]="['/albums', album.id]" class="album-title">{{album.id}} {{album.title}}</a>
     <button (click)="deleteAlbum(album.id)" type="button" class="btn btn-outline-danger">delete</button>
   </li>
 </ul>

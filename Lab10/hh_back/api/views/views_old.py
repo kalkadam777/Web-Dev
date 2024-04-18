@@ -1,7 +1,7 @@
 from django.views.decorators.csrf import csrf_exempt
 from django.http.response import JsonResponse
 import json
-from .models import Company, Vacancy
+from api.models import Company, Vacancy
 
 @csrf_exempt
 def company_list(request):

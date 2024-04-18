@@ -1,0 +1,36 @@
+.company-list {
+    margin: 20px;
+  }
+  
+  .company-item {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  
+  .company-item:hover {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  }
+  
+  .company-item h2 {
+    color: #333;
+    font-size: 24px;
+  }
+  
+  .company-item p {
+    font-size: 16px;
+    color: #666;
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .location-info {
+    font-size: 14px;
+    font-style: italic;
+    color: #888;
+  }
+  

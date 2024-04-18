@@ -1,0 +1,40 @@
+.vacancy-list {
+    margin: 20px;
+    padding: 0;
+  }
+  
+  .vacancy-item {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    /* transition: transform 0.3s ease-in-out; */
+  }
+  
+  .vacancy-item:hover {
+    /* transform: translateY(-5px); */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  }
+  
+  .vacancy-item h3 {
+    color: #0056b3;
+    margin-top: 0;
+  }
+  
+  .vacancy-item p {
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .salary-info {
+    font-weight: bold;
+    color: #007BFF;
+  }
+  
+  .company-info {
+    font-style: italic;
+    color: #666;
+  }
+  
